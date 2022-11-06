@@ -1,0 +1,111 @@
+:root {
+  --color-primary-dark-cyan: hsl(185, 75%, 39%);
+  --color-primary-extra-dark-mute-blue: hsl(229, 23%, 23%);
+  --color-primary-dark-gray-blue: hsl(227, 10%, 46%);
+  --color-neutral-dark-gray: hsl(0, 0%, 59%);
+  /* Adjusted variation for WCAG-AA contrast ratio */
+  --color-neutral-dark-gray2: hsl(0, 0%, 44%);
+  --font-family: 'Kumbh Sans', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 400 1.125rem var(--font-family);
+  width: 100vw;
+  height: 100vh;
+  background:
+    url(../images/bg-pattern-top.svg) left -70vw top -60vw / 120vw no-repeat,
+    url(../images/bg-pattern-bottom.svg) right -70vw bottom -60vw / 120vw no-repeat,
+    var(--color-primary-dark-cyan);
+  color: var(--color-neutral-dark-gray2);
+  padding: 1.3rem;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  min-width: 18rem;
+  max-width: 24rem;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 4.5rem;
+}
+
+.profile-picture {
+  position: absolute;
+  width: 7rem;
+  height: auto;
+  bottom: calc(-7rem / 2);
+  left: calc(50% - 7rem / 2);
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.profile-identity,
+.profile-location {
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-neutral-dark-gray2);
+  margin: 0 0 0.4em 0;
+}
+
+.profile-name {
+  color: var(--color-primary-extra-dark-mute-blue);
+  padding-right: 0.3em;
+}
+
+.profile-location {
+  font-size: 0.8em;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  border-top: 1px solid hsl(0, 0%, 85%);
+  font-weight: 700;
+  text-align: center;
+  list-style: none;
+  margin: 1em 0 0 0;
+  padding: 1.5rem 3rem;
+}
+
+.stat-amount,
+.stat-type {
+  display: block;
+}
+
+.stat-amount {
+  color: var(--color-primary-extra-dark-mute-blue);
+  padding-bottom: 0.2em;
+}
+
+.stat-type {
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 768px) {
+  
+}

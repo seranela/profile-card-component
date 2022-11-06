@@ -70,6 +70,10 @@ img {
   margin: 0 0 0.4em 0;
 }
 
+.profile-identity {
+  font-size: 1.125rem;
+}
+
 .profile-name {
   color: var(--color-primary-extra-dark-mute-blue);
   padding-right: 0.3em;
